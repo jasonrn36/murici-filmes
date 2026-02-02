@@ -1,0 +1,82 @@
+@use 'colors';
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: colors.$corDeFundo;
+    transition: background-color .5s ease;
+    align-items: center;
+
+    @media (max-width: 767px) { // telas menores que 768px
+        position: sticky;
+        top: -5px;
+        left: 0;
+        z-index: 8;
+        background-color: colors.$corDeFundo;
+        transition: background-color .5s ease;
+        align-items: center;
+    }
+
+    &--is-hidden {
+        background-color: transparent;
+
+        .header__logo {
+            opacity: 0;
+            visibility: hidden;
+
+
+        }
+        .header__links__item:first-child {
+            opacity: 0;
+            visibility: hidden;
+    }
+}
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px;
+        padding: 8px 36px;
+
+        @media (max-width: 767px) { // telas menores que 768px
+            padding: 0px 12px 0px 20px;
+        }
+
+    }
+    &__logo {
+        max-width: 80px;
+        width: 100%;
+        transition: opacity .5s ease;
+
+        @media (max-width: 767px) { // telas menores que 768px
+            max-width: 64px;
+        }
+
+    }
+    &__links {
+        display: flex; // para deixar uma ao lado da outra
+
+
+
+            &__item {
+            margin: 5px;
+        }
+    }
+
+    button {
+        height: 50px;
+        padding: 14px;
+
+        @media (max-width: 767px) { // telas menores que 768px
+            font-size: 13px;
+            padding: 8px 11px;
+            letter-spacing: 0;
+            height: 40px;
+            padding: 10px;
+        }
+    }
+
+}

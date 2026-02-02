@@ -1,0 +1,115 @@
+@use 'colors';  // PARA FAZER USO CAS CORES NO CARQUIVOS colors use explemplo: colors.$corPrincipal
+
+.hero {
+    display: flex;
+    position: relative;
+    top: -10px;
+    background-repeat: no-repeat;
+    padding: 10.5vw;
+    min-height: 50vw; // ISSO CORTA A IMAGEM deixando meno dos lados e em cima
+    background-image: url('../Images/hero_desktop.jpeg');
+    background-size: cover;
+    background-position: center;
+
+    @media (max-width: 767px) { // telas menores que 768px
+        position: relative;
+        left: 8px;
+        width: 100%;
+        padding-top: 50vw;
+        min-height: 80vw;
+        background-image: url('../Images/hero_celular.jpeg');
+        background-size: contain; // PARA IMAGEM FICAR TODA NA TELA DO CELULAR
+        background-position: center;
+        margin-top: -55px;
+    }
+
+    .button {
+        margin-top: 2vw;
+        margin-bottom: 8px;
+    }
+
+
+        &__content {
+            max-width: 640px;
+            position: relative;
+            top: 0px;
+            margin-top: 20px;
+            margin-right: 0;
+            margin-bottom: 0;
+            margin-left: -20px;
+
+            @media (max-width: 767px) { // telas menores que 768px
+                padding-top: 150px;
+            }
+
+        }
+        &__content__branding {
+            max-width: 300px;
+            margin: 0 auto 38px;
+
+            @media (max-width: 767px) { // telas menores que 768px
+                max-width: 180px;
+            }
+
+        }
+        // Area de estilização dos combos
+        &__content__combos { // Aqui é somente as ul e li
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+
+            @media (max-width: 767px) { // telas menores que 768px
+                display: block;
+            }
+
+        }
+            &__item__combo { //    Aqui tenho o combo 01
+                width: calc(50% - 12px);
+
+                @media (max-width: 767px) { // telas menores que 768px
+                    width: 100%;
+                    margin-bottom: 24px;
+            }
+
+                .img_combo01 {
+                    max-width: 50%;
+                }
+                .img_combo02 {
+                    max-width: 81%;
+                }
+                
+                .button {
+                    display: block;
+                    width: 100%;
+                    height: 60px;
+                    color: colors.$corTextoSecundaria;
+                    background-color: #6421ff;
+                    border-radius: 9px;
+                    text-transform: none;
+                    transition: background-color 0.3s ease;
+                    border: none;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    padding: 8px 14px;
+                }
+
+                .button:hover {
+                        background-color: #7940ff;
+                }
+                .button:active {
+                        background-color: #a888f3;
+                }
+            }
+
+        .title--small {
+            margin-bottom: 38px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+
+
+}
+
