@@ -13,12 +13,19 @@
                 //  ÁREA de configuração da marca
         &__branding {
             max-width: 320px;
-            background-color: red;
+            margin: 0 auto;
 
             img {
                 width: 100%;
                 height: auto;
             }
+        }
+        
+        .title--small {
+            margin-bottom: 64px;
+        }
+        p {
+            margin-bottom: 20px;
         }
     }
 

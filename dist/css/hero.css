@@ -11,9 +11,15 @@
 }
 .hero__content__branding {
   max-width: 320px;
-  background-color: red;
+  margin: 0 auto;
 }
 .hero__content__branding img {
   width: 100%;
   height: auto;
+}
+.hero__content .title--small {
+  margin-bottom: 64px;
+}
+.hero__content p {
+  margin-bottom: 20px;
 }
