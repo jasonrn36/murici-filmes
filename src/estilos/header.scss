@@ -1,0 +1,8 @@
+.header {
+    padding: 20px;
+    text-align: center;
+//  ÁREA de configuração do logo
+    &__logo {
+        max-width: 150px;
+    }   
+}

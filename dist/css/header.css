@@ -1,0 +1,7 @@
+.header {
+  padding: 20px;
+  text-align: center;
+}
+.header__logo {
+  max-width: 150px;
+}

@@ -2,4 +2,16 @@
     padding: 5.6vw;
     min-height: 80vh;
     background-image: url("../images/Hero_Murici_desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    //  ÁREA de configuração do conteúdo do hero
+    &__content {
+        max-width: 640px;
+        background-color: red;
+    }
+    &__branding {
+        max-width: 320px;
+    }
 }
