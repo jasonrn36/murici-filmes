@@ -1,9 +1,9 @@
-const sharp = require('sharp');
-const fs = require('fs-extra');
-const path = require('path');
-const glob = require('glob');
-const { optimize } = require('svgo'); // Certifique-se de instalar svgo: npm install svgo
-
+const sharp = require('sharp'); //instalar o pacote via terminal:npm install sharp --save-dev
+const fs = require('fs-extra'); //instalar o pacote via terminal: npm install fs-extra --save-dev
+const path = require('path');  
+const glob = require('glob'); //instalar o pacote via terminal: npm install glob --save-dev
+const { optimize } = require('svgo'); //instalar o pacote via terminal: npm install gulp-svgmin --save-dev
+                                        //instalar o pacote via terminal: npm install gulp-imagemin --save-dev  
 const pastaEntrada = 'src/images';
 const pastaSaida = 'dist/images';
 
