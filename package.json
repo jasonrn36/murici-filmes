@@ -1,0 +1,34 @@
+{
+  "name": "murici_films",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/jasonrn36/murici-filmes#readme",
+  "bugs": {
+    "url": "https://github.com/jasonrn36/murici-filmes/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonrn36/murici-filmes.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp watch",
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "glob": "^13.0.1",
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "gulp-svgmin": "^4.1.0",
+    "sass": "^1.97.3"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
+}
