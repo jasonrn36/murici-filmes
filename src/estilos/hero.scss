@@ -9,9 +9,17 @@
     //  ÁREA de configuração do conteúdo do hero
     &__content {
         max-width: 640px;
+
+                //  ÁREA de configuração da marca
+        &__branding {
+            max-width: 320px;
+            background-color: red;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
     }
-    //  ÁREA de configuração da marca
-    &__branding {
-        max-width: 320px;
-    }
+
 }

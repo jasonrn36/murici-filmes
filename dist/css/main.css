@@ -9,8 +9,13 @@
 .hero__content {
   max-width: 640px;
 }
-.hero__branding {
+.hero__content__branding {
   max-width: 320px;
+  background-color: red;
+}
+.hero__content__branding img {
+  width: 100%;
+  height: auto;
 }
 
 .header {
