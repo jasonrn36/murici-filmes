@@ -493,6 +493,7 @@
     "yauzl": "^2.10.0"
   },
   "devDependencies": {
+    "browser-sync": "^3.0.4",
     "fs-extra": "^11.3.3",
     "gulp": "^5.0.1",
     "gulp-imagemin": "^7.1.0",

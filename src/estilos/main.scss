@@ -3,3 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+$cordeFundo: #1a0d07;
+$corTextoPrincipal: silver;
+$corTextoSecundario: #f9f9f9;
+
+
+body {
+    background-color: #1a0d07;
+}
+
+//  AREA de configuração dos tesxtos
+@mixin text($FontSize: 16px) {
+    font-size: $FontSize;
+    line-height: $FontSize + 10px;
+    color: $corTextoPrincipal;
+}
+.text--big {
+    @include text(18px);
+    color: aliceblue;
+}
+.text {
+    @include text;
+}
+.text--small{
+    @include text(12px);
+}
+//Áre ad econfiguração dos títulos
+@mixin title($FontSize: 28px) {
+    @include text($FontSize);
+    color: $corTextoSecundario;
+}
+.title--big {
+    @include title(44px);
+}
+.title {
+    @include title;
+
+}
+.title--small {
+    @include title(28px);
+}

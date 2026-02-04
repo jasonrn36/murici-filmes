@@ -3,3 +3,47 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #1a0d07;
+}
+
+.text--big {
+  font-size: 18px;
+  line-height: 28px;
+  color: silver;
+  color: aliceblue;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 26px;
+  color: silver;
+}
+
+.text--small {
+  font-size: 12px;
+  line-height: 22px;
+  color: silver;
+}
+
+.title--big {
+  font-size: 44px;
+  line-height: 54px;
+  color: silver;
+  color: #f9f9f9;
+}
+
+.title {
+  font-size: 28px;
+  line-height: 38px;
+  color: silver;
+  color: #f9f9f9;
+}
+
+.title--small {
+  font-size: 28px;
+  line-height: 38px;
+  color: silver;
+  color: #f9f9f9;
+}
