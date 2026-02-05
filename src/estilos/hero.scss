@@ -27,6 +27,23 @@
         p {
             margin-bottom: 20px;
         }
+
+        //Área do UL classs combos
+        &__combos {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            //Área do LI class combo
+            &__combo {
+                list-style: none;
+                align-items: center;
+                //Área do IMG dentro do LI class combo
+                img {
+                    width: 100%;
+                }
+
+            }
+        }
     }
 
 }

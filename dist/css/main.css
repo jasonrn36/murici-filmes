@@ -23,6 +23,18 @@
 .hero__content p {
   margin-bottom: 20px;
 }
+.hero__content__combos {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+.hero__content__combos__combo {
+  list-style: none;
+  align-items: center;
+}
+.hero__content__combos__combo img {
+  width: 100%;
+}
 
 .header {
   padding: 20px;
