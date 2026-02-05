@@ -26,7 +26,6 @@
 .hero__content__combos {
   display: flex;
   justify-content: space-between;
-  background-color: black;
 }
 .hero__content__combos__combo {
   list-style: none;
