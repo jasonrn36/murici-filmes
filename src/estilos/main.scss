@@ -3,6 +3,19 @@
 @use 'header';
 @use 'variables';
 
+// Área de declaração de fontes
+// Fonte usada no Título
+@font-face {
+    font-family:  'Squeaky';
+    src: url("../../assets/fonts/Squeaky.otf") format("opentype");
+    font-weight: 400;
+}
+// Fonte usada no texto
+@font-face {
+    font-family:  'Lovely-Rose';
+    src: url("../../assets/fonts/Lovely-Rose.otf") format("opentype");
+    font-weight: 400;
+}
 //  RESET CSS
 * {
     margin: 0;
@@ -12,6 +25,7 @@
 //  ÁREA de configuração do body
 body {
     background-color: variables.$cordeFundo; // Esta cor se encontra no documento variables.scss
+    font-family: 'Lovely-Rose';
 }
 
 //  AREA de configuração dos tesxtos
