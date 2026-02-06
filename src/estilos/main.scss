@@ -3,6 +3,19 @@
 @use 'header';
 @use 'variables';
 
+// Área de declaração de fontes
+// Fonte usada no Título
+@font-face {
+    font-family:  'Squeaky';
+    src: url("../../assets/fonts/Squeaky.otf") format("opentype");
+    font-weight: 400;
+}
+// Fonte usada no texto
+@font-face {
+    font-family:  'Roboto-Regular';
+    src: url("../../assets/fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
 //  RESET CSS
 * {
     margin: 0;
@@ -12,6 +25,7 @@
 //  ÁREA de configuração do body
 body {
     background-color: variables.$cordeFundo; // Esta cor se encontra no documento variables.scss
+    font-family: 'Roboto-Regular';
 }
 
 //  AREA de configuração dos tesxtos
@@ -44,4 +58,7 @@ body {
 }
 .title--small {
     @include title(28px);
+    font-family: 'Roboto-Regular';
+    font-weight: lighter;
+    color: variables.$corTitulos; // Esta cor se encontra no documento variables.scss
 }
