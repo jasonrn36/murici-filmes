@@ -18,7 +18,7 @@ body {
 @mixin text($FontSize: 16px) {
     font-size: $FontSize;
     line-height: $FontSize + 10px;
-    color: $corTextoPrincipal;
+    color: variables.$corTextoPrincipal;
 }
 .text--big {
     @include text(18px);
