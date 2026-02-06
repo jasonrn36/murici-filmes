@@ -1,6 +1,7 @@
 //àrea de importação de fontes
 @use 'hero';
 @use 'header';
+@use 'variables';
 
 //  RESET CSS
 * {
@@ -8,27 +9,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
-//  ÁREA de configuração das cores
-$cordeFundo: #1a0d07;
-$corTextoPrincipal: silver;
-$corTextoSecundario: #f9f9f9;
-
 //  ÁREA de configuração do body
 body {
-    background-color: #1a0d07;
+    background-color: variables.$cordeFundo; // Esta cor se encontra no documento variables.scss
 }
 
 //  AREA de configuração dos tesxtos
 @mixin text($FontSize: 16px) {
     font-size: $FontSize;
     line-height: $FontSize + 10px;
-    color: $corTextoPrincipal;
+    color: variables.$corTextoPrincipal;
 }
 .text--big {
     @include text(18px);
-    color: aliceblue;
+    color: variables.$corTextoSecundario; // Esta cor se encontra no documento variables.scss
 }
 .text {
     @include text;
@@ -39,7 +33,7 @@ body {
 //Áre ad econfiguração dos títulos
 @mixin title($FontSize: 28px) {
     @include text($FontSize);
-    color: $corTextoSecundario;
+    color: variables.$corTextoSecundario; // Esta cor se encontra no documento variables.scss
 }
 .title--big {
     @include title(44px);

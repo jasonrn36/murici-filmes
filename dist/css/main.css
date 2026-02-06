@@ -50,14 +50,14 @@
 }
 
 body {
-  background-color: #1a0d07;
+  background-color: #0F0401;
 }
 
 .text--big {
   font-size: 18px;
   line-height: 28px;
   color: silver;
-  color: aliceblue;
+  color: #f9f9f9;
 }
 
 .text {

@@ -31,7 +31,7 @@ for (const arquivo of arquivosRaster) {
     const imagem = sharp(arquivo);
 
     if (extensao === '.jpg' || extensao === '.jpeg') {
-        await imagem.jpeg({ quality: 75 }).toFile(destino);
+        await imagem.jpeg({ quality: 70 }).toFile(destino);
     } else if (extensao === '.png') {
         await imagem.png({ compressionLevel: 9 }).toFile(destino);
     } else if (extensao === '.gif') {
