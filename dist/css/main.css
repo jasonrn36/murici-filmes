@@ -44,8 +44,13 @@
 }
 
 @font-face {
-  font-family: "Lovely-Rose";
-  src: url("../../assets/fonts/Lovely-Rose.otf") format("opentype");
+  font-family: "Squeaky";
+  src: url("../../assets/fonts/Squeaky.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../../assets/fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 * {
@@ -56,7 +61,7 @@
 
 body {
   background-color: #0F0401;
-  font-family: "Lovely-Rose";
+  font-family: "Roboto-Regular";
 }
 
 .text--big {
@@ -97,4 +102,7 @@ body {
   line-height: 38px;
   color: silver;
   color: #f9f9f9;
+  font-family: "Roboto-Regular";
+  font-weight: lighter;
+  color: #D9CBA7;
 }
