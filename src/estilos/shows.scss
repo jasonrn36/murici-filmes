@@ -1,11 +1,64 @@
+// Área de importação
+@use 'variables';
+
+
+// Área do Bloco de Código
 .shows {
+    align-items: center;
+    padding: 2vw 5.6vw; 
+    min-height: 50vw;
     &__list {
+        margin-top: 44px;
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        list-style: none;
 
-        &__list__item {
+        @media (max-width: 768px) { //tablet e desktop grid-template-columns: 1fr 1fr; overflow-x: hidden; width: 100%; }
+                grid-template-columns: 1fr 1fr;
+                overflow-x: hidden;
+                width: 100%;
+        }
 
+        &--is-active {
+        display: grid;
+        }
+
+        &__item {
             img {
-                    width: 100%;
+                max-width: 100%;
+                border-radius: 4px;
             }
+        }
+    }
+
+    &__tabs{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+
+        &__button{
+            color: variables.$corTextoSecundario;
+            font-size: 20px;
+            background: none;
+            padding-bottom: 5px;
+            margin: 0 1vw;
+            text-transform: uppercase;
+            border: none;
+            border-bottom: 5px solid transparent;
+
+            @media (max-width: 768px) { //fonte 16px para telas menores
+                font-size: 16px;
+
+            }
+
+            cursor: pointer;
+            &--is-active {
+            border-color: variables.$corTextoSecundario;
+
+            }
+
+
         }
     }
 }
