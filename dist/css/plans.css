@@ -1,0 +1,78 @@
+.hero {
+  padding: 5.6vw;
+  min-height: 80vh;
+  background-image: url("../images/Hero_Murici_desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.hero__content {
+  max-width: 640px;
+}
+.hero__content__branding {
+  max-width: 320px;
+  margin: 0 auto;
+}
+.hero__content__branding img {
+  width: 100%;
+  height: auto;
+}
+.hero__content .title--small {
+  margin-bottom: 64px;
+}
+.hero__content p {
+  margin-bottom: 20px;
+}
+.hero__content__combos {
+  display: flex;
+  justify-content: space-between;
+}
+.hero__content__combos__combo {
+  list-style: none;
+  align-items: center;
+}
+.hero__content__combos__combo img {
+  width: 100%;
+}
+
+.plans {
+  align-items: center;
+  padding: 5.6vw;
+}
+.plans h2 {
+  text-align: center;
+}
+.plans__list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 50px;
+}
+@media (max-width: 768px) {
+  .plans__list {
+    display: block;
+  }
+}
+.plans__list__item {
+  text-align: center;
+  padding: 60px 44px 44px;
+  max-width: 380px;
+  width: 100%;
+}
+.plans__list__item:nth-child(2) {
+  background-image: url(../Images/fundo_combo_plus.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.plans__list__item img {
+  height: 83px;
+}
+.plans__list {
+  padding-bottom: 24px;
+}
+.plans p {
+  text-align: center;
+}
+.plans strong {
+  display: block;
+}

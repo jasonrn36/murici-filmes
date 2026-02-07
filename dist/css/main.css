@@ -96,6 +96,48 @@
   border-color: #f9f9f9;
 }
 
+.plans {
+  align-items: center;
+  padding: 5.6vw;
+}
+.plans h2 {
+  text-align: center;
+}
+.plans__list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 50px;
+}
+@media (max-width: 768px) {
+  .plans__list {
+    display: block;
+  }
+}
+.plans__list__item {
+  text-align: center;
+  padding: 60px 44px 44px;
+  max-width: 380px;
+  width: 100%;
+}
+.plans__list__item:nth-child(2) {
+  background-image: url(../Images/fundo_combo_plus.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.plans__list__item img {
+  height: 83px;
+}
+.plans__list {
+  padding-bottom: 24px;
+}
+.plans p {
+  text-align: center;
+}
+.plans strong {
+  display: block;
+}
+
 @font-face {
   font-family: "Squeaky";
   src: url("../../assets/fonts/Squeaky.otf") format("opentype");
