@@ -12,9 +12,9 @@
 .watch_anywhere img {
   max-width: 100%;
 }
-.watch_anywhere__text__container {
+.watch_anywhere__text_container {
   padding: 0 2vw;
 }
-.watch_anywhere__text__container h2 {
+.watch_anywhere__text_container h2 {
   margin-bottom: 24px;
 }

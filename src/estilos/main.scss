@@ -95,3 +95,69 @@ button {
         border: none;
         cursor: pointer
 }
+
+    .image-text-section {
+        padding: 5.6vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        @media (max-width: 767px) { // telas menores que 768px
+            display: block;
+
+        }
+        &__text__container {
+            padding: 0 2vw;
+
+        @media (max-width: 767px) { // telas menores que 768px
+            position: relative;
+            left: 0;
+            width: 100%;
+
+        }
+
+            h2 {
+                margin-bottom: 24px;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            height: auto;
+        }
+        
+
+
+
+        &--image-full-width {
+                display: block;
+                position: relative;
+            img {
+                width: 100%;
+            }
+
+            &__text_container{
+            z-index: 3;
+            position: absolute;
+            top: 0vw;
+            left: 50%;
+            height: 100%;
+            width: calc(50% - 10vw);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media (max-width: 767px) { // telas menores que 768px
+            position: relative;
+            left: 0;
+            width: 100%;
+
+        }
+
+        }
+
+    }
+
+
+}

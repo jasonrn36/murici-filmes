@@ -2,7 +2,6 @@
 @use "variables";
 
 .plans {
-    background-color: red;
     align-items: center;
    // padding: 5.6vw;
     padding: 0;
@@ -14,7 +13,6 @@
 
     &__list {
         padding: 0;
-        background-color: yellow;
         display: flex;
         justify-content: space-around;
         list-style: none;
@@ -26,7 +24,6 @@
         }
 
         &__item {
-        background-color: blue;
         padding: 20px 20px 20px 20px;
         max-width: 380px;
         width: 100%;

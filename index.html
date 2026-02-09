@@ -163,7 +163,7 @@
     </section>
     <section class="image-text-section">
         <img src="./images/tv_pc_tablet_celular.png" alt="Imagem com TV, Computador, tablet e celular">
-        <div class="image-text-section__text_container">
+        <div class="image-text-section__text__container">
             <h2 class="title">Assista do seu jeito</h2>
             <p class="text--big">
                 Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de títulos em 4K não para de crescer. Além disso, para a felicidade de todos, é possível assistir em até 4 telas ao mesmo tempo.
@@ -171,11 +171,13 @@
         </div>
     </section>
     <section class="image-text-section image-text-section--image-full-width">
-        <picture>
-            <source media="(max-width: 768px)" srcset="./images/fundo_rei_leao_celular.png" />
-            <img src="./images/fundo_rei_leao.png" alt="Rei Leão">
-        </picture>
-        <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
+            <picture>
+                <!--a imagem abaixo é apenas para mobile-->
+                <source media="(max-width: 767px)" srcset="./Images/fundo_rei_leao_celular.png"/>
+                <!--a imagem abaixo é usada apenas para desktop-->
+                <img src="./Images/fundo_rei_leao.png" alt="TV computador e Tablet e Celular">
+            </picture>
+        <div class="image-text-section__text__container image-text-section--image-full-width__text_container">
             <h2 class="title">Baixe filmes e séries</h2>
             <p class="text--big">
                 Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.
