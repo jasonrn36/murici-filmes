@@ -4,8 +4,8 @@ const path = require('path');
 const glob = require('glob'); //instalar o pacote via terminal: npm install glob --save-dev
 const { optimize } = require('svgo'); //instalar o pacote via terminal: npm install gulp-svgmin --save-dev
                                         //instalar o pacote via terminal: npm install gulp-imagemin --save-dev  
-const pastaEntrada = 'src/images';
-const pastaSaida = 'dist/images';
+const pastaEntrada = './src/images';
+const pastaSaida = './dist/images';
 
 fs.ensureDirSync(pastaSaida);
 
