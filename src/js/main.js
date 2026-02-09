@@ -74,4 +74,6 @@ function escondeTodasAbas() {
     for (let i = 0; i < tabsContainer.length; i++) {
         tabsContainer[i].classList.remove('shows__list--is-active');
     }
-};
+}
+console.log("Olá, mundo!")
+;
