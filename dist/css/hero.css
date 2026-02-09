@@ -23,6 +23,10 @@
 .hero__content p {
   margin-bottom: 20px;
 }
+.hero__content p:last-child {
+  margin-top: 60px;
+  background-color: red;
+}
 .hero__content__combos {
   display: flex;
   justify-content: space-between;
@@ -33,4 +37,17 @@
 }
 .hero__content__combos__combo img {
   width: 100%;
+}
+.hero__content__combos button {
+  display: block;
+  width: 80%;
+  height: 60px;
+  font-size: 18px;
+  color: #f9f9f9;
+  background-color: #d07213;
+  border-radius: 4px;
+  margin-top: 2vw;
+  margin-bottom: 8px;
+  border: none;
+  cursor: pointer;
 }

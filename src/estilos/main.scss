@@ -1,3 +1,4 @@
+//àrea de importação de fontes
 @use 'hero';
 @use 'variables';
 @use 'shows';
@@ -8,40 +9,32 @@
 @use 'header';
 
 
-
+// Área de declaração de fontes
+// Fonte usada no Título
 @font-face {
-    font-family: Frutiger;
-    src: url(../../assets/fonts/Frutiger.woff) format('woff');
+    font-family:  'Squeaky';
+    src: url("../../assets/fonts/Squeaky.otf") format("opentype");
+    font-weight: 400;
 }
-
+// Fonte usada no texto
 @font-face {
-    font-family: Roboto-Regular;
-    src: url(../../assets/fonts/Roboto-Regular.ttf) format('truetype');
+    font-family:  'Roboto-Regular';
+    src: url("../../assets/fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
 }
-
+//  RESET CSS
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto-Regular, sans-serif;
-    list-style: none; // tira o marcador de lista
+}
+//  ÁREA de configuração do body
+body {
+    background-color: variables.$cordeFundo; // Esta cor se encontra no documento variables.scss
+    font-family: 'Roboto-Regular';
 }
 
-html{
-    background-color: variables.$corDeFundo;
-    overflow-x: hidden;
-}
-
-.hero {
-    background-size: cover;
-    background-position: center;
-    //align-items: left;
-    text-align: center;
-
-}
-
-
-//  AREA DO MIXIN
+//  AREA de configuração dos tesxtos
 @mixin text($FontSize: 16px) {
     font-size: $FontSize;
     line-height: $FontSize + 10px;
@@ -50,171 +43,36 @@ html{
 
 .text--big {
     @include text(18px);
-    color: aliceblue;
-
-    @media (max-width: 768px) { // telas menores que 768px
-            @include text(15px);
-    }
-
+    color: variables.$corTextoSecundario; // Esta cor se encontra no documento variables.scss
 }
 .text {
     @include text;
 
-            @media (max-width: 768px) { // telas menores que 768px
-            @include text(14px);
-    }
 }
 .text--small{
     @include text(12px);
 
-        @media (max-width: 768px) { // telas menores que 768px
-            @include text(11px);
-    }
-    
-}
 
+}
+//Áre ad econfiguração dos títulos
 @mixin title($FontSize: 28px) {
     @include text($FontSize);
-    @include font-family(Roboto-Regular);
-
-    color: variables.$corTextoSecundaria;
+    color: variables.$corTextoSecundario; // Esta cor se encontra no documento variables.scss
 }
 .title--big {
     @include title(44px);
 
-    @media (max-width: 768px) { // telas menores que 768px
-            @include title(26px)
-    }
+
 }
 
 .title {
     @include title;
 
-    @media (max-width: 768px) { // telas menores que 768px
-            @include title(24px)
-    }
+
 }
 .title--small {
     @include title(28px);
-
-        @media (max-width: 768px) { // telas menores que 768px
-            @include title(22px)
-    }
-
-}
-
-.link-text {
-    @include text(18px);
-    color: variables.$corTextoSecundaria;
-    text-decoration: underline;
-}
-
-.shows {
-    margin: 0 auto;
-
-}
-
-.plans {
-    margin: 0 auto;
-}
-
-
-                .button {
-                    display: flex;
-                    width: 100%;
-                    height: 45px;
-                    color: variables.$corTextoSecundaria;
-                    background-color: variables.$corDeFundoBotaoDark;
-                    border: solid 2px #fff;
-                    border-radius: 9px;
-                    margin-top: 1vw;
-                    margin-bottom: 8px;
-                    transition: background-color 0.3s ease;
-                    padding: 8px 14px;
-                    align-items: center;
-
-                    text-align: center;
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    letter-spacing: 1px;
-
-                    cursor: pointer;
-                    transition: all 0.3s ease;
-                }
-
-                .button:hover {
-                    background-color: variables.$corDeFundoBotaoPrimario;
-                    border: solid 2px variables.$corDeFundoBotaoPrimario;
-
-                        
-                }
-                .button:active {
-                        background-color: variables.$corDeFundoBotaoSecundario;
-                        border: solid 2px #fff;
-                }
-
-    .image-text-section {
-        padding: 5.6vw;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-
-        @media (max-width: 767px) { // telas menores que 768px
-            display: block;
-
-        }
-        &__text__container {
-            padding: 0 2vw;
-
-        @media (max-width: 767px) { // telas menores que 768px
-            position: relative;
-            left: 0;
-            width: 100%;
-
-        }
-
-            h2 {
-                margin-bottom: 24px;
-            }
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-            height: auto;
-        }
-        
-
-
-
-        &--image-full-width {
-                display: block;
-                position: relative;
-            img {
-                width: 100%;
-            }
-
-            &__text_container{
-            z-index: 3;
-            position: absolute;
-            top: 0vw;
-            left: 50%;
-            height: 100%;
-            width: calc(50% - 10vw);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            @media (max-width: 767px) { // telas menores que 768px
-            position: relative;
-            left: 0;
-            width: 100%;
-
-        }
-
-        }
-
-    }
-
-
+    font-family: 'Roboto-Regular';
+    font-weight: lighter;
+    color: variables.$corTitulos; // Esta cor se encontra no documento variables.scss
 }

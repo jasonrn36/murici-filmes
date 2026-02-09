@@ -1,5 +1,3 @@
-@use 'variables';
-
 .faq {
     padding: 5.6vw;
     h2 {
@@ -11,7 +9,7 @@
         list-style: none;
 
         &__item {
-            background-color: variables.$corFaq;
+            background-color: #13151d;
             border-bottom: 1px solid #ccc;
             margin-bottom: 24px;
 
