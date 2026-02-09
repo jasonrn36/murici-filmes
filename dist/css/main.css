@@ -25,7 +25,6 @@
 }
 .hero__content p:last-child {
   margin-top: 60px;
-  background-color: red;
 }
 .hero__content__combos {
   display: flex;
@@ -54,14 +53,14 @@
 
 .shows {
   align-items: center;
-  padding: 2vw 5.6vw;
+  padding: 2vw 10vw;
   min-height: 50vw;
 }
 .shows__list {
   margin-top: 44px;
   display: none;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
+  gap: 20px;
   list-style: none;
 }
 @media (max-width: 768px) {
@@ -274,6 +273,7 @@
 }
 
 body {
+  overflow-X: hidden;
   background-color: #0F0401;
   font-family: "Roboto-Regular";
 }

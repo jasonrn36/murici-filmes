@@ -28,8 +28,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 //  ÁREA de configuração do body
 body {
+    overflow-X: hidden;
     background-color: variables.$cordeFundo; // Esta cor se encontra no documento variables.scss
     font-family: 'Roboto-Regular';
 }

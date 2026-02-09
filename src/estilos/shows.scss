@@ -5,13 +5,14 @@
 // Área do Bloco de Código
 .shows {
     align-items: center;
-    padding: 2vw 5.6vw; 
+  //  padding: 2vw 5.6vw; 
+    padding: 2vw 10vw; 
     min-height: 50vw;
     &__list {
         margin-top: 44px;
         display: none;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 24px;
+        gap: 20px;
         list-style: none;
 
         @media (max-width: 768px) { //tablet e desktop grid-template-columns: 1fr 1fr; overflow-x: hidden; width: 100%; }

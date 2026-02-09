@@ -25,7 +25,6 @@
 }
 .hero__content p:last-child {
   margin-top: 60px;
-  background-color: red;
 }
 .hero__content__combos {
   display: flex;
