@@ -53,16 +53,18 @@
 }
 .header__links {
   display: flex;
+  list-style: none;
 }
 .header__links__item {
   margin: 5px;
 }
-.header button {
+.header .button {
   height: 50px;
   padding: 14px;
+  text-decoration: none;
 }
 @media (max-width: 767px) {
-  .header button {
+  .header .button {
     font-size: 13px;
     padding: 8px 11px;
     letter-spacing: 0;

@@ -82,18 +82,29 @@ body {
     color: variables.$corTitulos; // Esta cor se encontra no documento variables.scss
 }
 
-button {
+.button {
         display: block;
-        width: 80%;
+        align-items: center;
+        width: 100%;
         height: 60px;
         font-size: 18px;
         color: variables.$corTextoSecundario;
-        background-color: variables.$corDeFundoBotaoPrimario;
+        background-color: variables.$corDeFundoBotaoDark;// Esta cor se encontra no documento variables.scss
         border-radius: 4px;
         margin-top: 2vw;
         margin-bottom: 8px;
         border: none;
         cursor: pointer
+}
+
+.button:hover {
+    background-color: variables.$corDeFundoBotaoPrimario;
+    border: solid 2px variables.$corDeFundoBotaoSecundario;
+
+}
+.button:active {
+    background-color: variables.$corDeFundoBotaoSecundario;
+    border: solid 2px variables.$corDeFundo;
 }
 
     .image-text-section {

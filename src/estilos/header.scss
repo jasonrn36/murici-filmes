@@ -58,17 +58,20 @@
     }
     &__links {
         display: flex; // para deixar uma ao lado da outra
+        list-style: none; // para retirar as bolinhas da lista
 
 
 
             &__item {
             margin: 5px;
+
         }
     }
 
-    button {
+    .button {
         height: 50px;
         padding: 14px;
+        text-decoration: none;
 
         @media (max-width: 767px) { // telas menores que 768px
             font-size: 13px;
