@@ -127,13 +127,12 @@
 }
 .plans__list__item {
   background-color: blue;
-  text-align: center;
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
+  padding: 20px 20px 20px 20px;
   max-width: 380px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .plans__list__item:nth-child(2) {
   background-image: url(../Images/fundo_combo_plus.png);
