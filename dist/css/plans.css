@@ -52,13 +52,16 @@
 }
 
 .plans {
+  background-color: red;
   align-items: center;
-  padding: 5.6vw;
+  padding: 0;
 }
 .plans h2 {
   text-align: center;
 }
 .plans__list {
+  padding: 0;
+  background-color: yellow;
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -70,8 +73,12 @@
   }
 }
 .plans__list__item {
+  background-color: blue;
   text-align: center;
-  padding: 60px 44px 44px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
   max-width: 380px;
   width: 100%;
 }
@@ -81,10 +88,7 @@
   background-size: contain;
 }
 .plans__list__item img {
-  height: 83px;
-}
-.plans__list {
-  padding-bottom: 24px;
+  height: 98px;
 }
 .plans p {
   text-align: center;

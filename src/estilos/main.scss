@@ -24,6 +24,9 @@
 }
 //  RESET CSS
 * {
+    position: relative;
+    top: 0;
+    left: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,7 +34,7 @@
 
 //  ÁREA de configuração do body
 body {
-    overflow-X: hidden;
+    overflow-x: hidden;
     background-color: variables.$cordeFundo; // Esta cor se encontra no documento variables.scss
     font-family: 'Roboto-Regular';
 }
@@ -77,4 +80,18 @@ body {
     font-family: 'Roboto-Regular';
     font-weight: lighter;
     color: variables.$corTitulos; // Esta cor se encontra no documento variables.scss
+}
+
+button {
+        display: block;
+        width: 80%;
+        height: 60px;
+        font-size: 18px;
+        color: variables.$corTextoSecundario;
+        background-color: variables.$corDeFundoBotaoPrimario;
+        border-radius: 4px;
+        margin-top: 2vw;
+        margin-bottom: 8px;
+        border: none;
+        cursor: pointer
 }

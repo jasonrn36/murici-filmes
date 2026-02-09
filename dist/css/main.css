@@ -105,13 +105,16 @@
 }
 
 .plans {
+  background-color: red;
   align-items: center;
-  padding: 5.6vw;
+  padding: 0;
 }
 .plans h2 {
   text-align: center;
 }
 .plans__list {
+  padding: 0;
+  background-color: yellow;
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -123,8 +126,12 @@
   }
 }
 .plans__list__item {
+  background-color: blue;
   text-align: center;
-  padding: 60px 44px 44px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
   max-width: 380px;
   width: 100%;
 }
@@ -134,10 +141,7 @@
   background-size: contain;
 }
 .plans__list__item img {
-  height: 83px;
-}
-.plans__list {
-  padding-bottom: 24px;
+  height: 98px;
 }
 .plans p {
   text-align: center;
@@ -267,13 +271,16 @@
   font-weight: 400;
 }
 * {
+  position: relative;
+  top: 0;
+  left: 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  overflow-X: hidden;
+  overflow-x: hidden;
   background-color: #0F0401;
   font-family: "Roboto-Regular";
 }
@@ -319,4 +326,18 @@ body {
   font-family: "Roboto-Regular";
   font-weight: lighter;
   color: #D9CBA7;
+}
+
+button {
+  display: block;
+  width: 80%;
+  height: 60px;
+  font-size: 18px;
+  color: #f9f9f9;
+  background-color: #d07213;
+  border-radius: 4px;
+  margin-top: 2vw;
+  margin-bottom: 8px;
+  border: none;
+  cursor: pointer;
 }
