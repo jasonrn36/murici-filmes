@@ -57,27 +57,28 @@ body {
 
 
 }
+
+.link-text {
+    @include text(18px);
+    color: variables.$corTextoSecundario;
+    text-decoration: underline;
+}
+
 //Áre ad econfiguração dos títulos
 @mixin title($FontSize: 28px) {
     @include text($FontSize);
     color: variables.$corTextoSecundario; // Esta cor se encontra no documento variables.scss
 }
-.title--big {
-    @include title(44px);
 
 
-}
 
-.title {
-    @include title;
-
+.shows {
+    margin: 0 auto;
 
 }
-.title--small {
-    @include title(28px);
-    font-family: 'Roboto-Regular';
-    font-weight: lighter;
-    color: variables.$corTitulos; // Esta cor se encontra no documento variables.scss
+
+.plans {
+    margin: 0 auto;
 }
 
 .button {
