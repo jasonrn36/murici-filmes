@@ -18,9 +18,6 @@
     align-items: center;
   }
 }
-.header .header--is-solid {
-  background-color: #260a03;
-}
 .header--is-hidden {
   background-color: transparent;
 }

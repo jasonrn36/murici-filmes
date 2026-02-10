@@ -1,12 +1,19 @@
 .hero {
-  position: relative;
-  top: -200px;
   padding: 5.6vw;
   min-height: 80vh;
   background-image: url("../images/Hero_Murici_desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .hero {
+    padding: 20vw 5.6vw 10vw;
+    min-height: auto;
+    background-image: url("../../src/images/Hero_Murici_Filmes_Celular.png");
+    background-size: cover;
+    background-position: top center;
+  }
 }
 .hero__content {
   max-width: 640px;
