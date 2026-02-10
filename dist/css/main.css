@@ -395,16 +395,6 @@
   background-color: #0F0401;
 }
 
-@font-face {
-  font-family: "Squeaky-Regular";
-  src: url("/assets/fonts/Squeaky-Regular.ttf");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url("/assets/fonts/Roboto-Regular.ttf");
-  font-weight: 400;
-}
 * {
   margin: 0;
   padding: 0;
@@ -414,7 +404,7 @@
 body {
   overflow-x: hidden;
   background-color: #0F0401;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
 }
 
 .text--big {
@@ -463,7 +453,7 @@ body {
   line-height: 38px;
   color: silver;
   color: #f9f9f9;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto";
   font-weight: lighter;
   color: #D9CBA7;
 }
