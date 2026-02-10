@@ -5,8 +5,8 @@
     top: 0;
     left: 0;
     z-index: 3;
-    background-color: variables.$corDeFundoHeader;
     transition: background-color .5s ease;
+    background-color: variables.$corDeFundoHeader;
     align-items: center;
 
     @media (max-width: 767px) { // telas menores que 768px
@@ -20,19 +20,23 @@
     }
 
     &--is-hidden {
-        background-color: transparent; 
-
-       // .header__logo {
-        //    opacity: 0;
-         //   visibility: hidden;
-          //  z-index: 2;
+        background-color: transparent;
+        transition: background-color .5s ease;
 
 
-     //   }
+        .header__logo {
+            opacity: 0;
+            visibility: hidden;
+            z-index: 2;
+            transition: background-color .5s ease;
+
+
+        }
     .header__links__item:first-child {
             opacity: 0;
             visibility: hidden;
             z-index: 4;
+            transition: background-color .5s ease;
     }
 }
 

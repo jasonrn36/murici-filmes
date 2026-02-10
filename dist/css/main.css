@@ -1,9 +1,12 @@
 .hero {
-  padding: 5.6vw;
+  position: relative;
+  top: -180px;
+  padding: 5.6vw 5.6vw 0;
   min-height: 80vh;
   background-image: url("../images/Hero_Murici_desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
   text-align: center;
 }
 @media (max-width: 767px) {
@@ -262,8 +265,8 @@
   top: 0;
   left: 0;
   z-index: 3;
-  background-color: #260a03;
   transition: background-color 0.5s ease;
+  background-color: #0F0401;
   align-items: center;
 }
 @media (max-width: 767px) {
@@ -272,18 +275,26 @@
     top: -5px;
     left: 0;
     z-index: 8;
-    background-color: #260a03;
+    background-color: #0F0401;
     transition: background-color 0.5s ease;
     align-items: center;
   }
 }
 .header--is-hidden {
   background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+.header--is-hidden .header__logo {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+  transition: background-color 0.5s ease;
 }
 .header--is-hidden .header__links__item:first-child {
   opacity: 0;
   visibility: hidden;
   z-index: 4;
+  transition: background-color 0.5s ease;
 }
 .header__container {
   display: flex;
