@@ -2,8 +2,8 @@
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 10;
-  background-color: #0F0401;
+  z-index: 3;
+  background-color: transparent;
   transition: background-color 0.5s ease;
   align-items: center;
 }
@@ -13,21 +13,13 @@
     top: -5px;
     left: 0;
     z-index: 8;
-    background-color: #0F0401;
+    background-color: #260a03;
     transition: background-color 0.5s ease;
     align-items: center;
   }
 }
 .header--is-hidden {
-  background-color: transparent;
-}
-.header--is-hidden .header__logo {
-  opacity: 0;
-  visibility: hidden;
-}
-.header--is-hidden .header__links__item:first-child {
-  opacity: 0;
-  visibility: hidden;
+  background-color: #260a03;
 }
 .header__container {
   display: flex;

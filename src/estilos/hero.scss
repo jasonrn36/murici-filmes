@@ -1,12 +1,16 @@
 @use "variables";
 
 .hero {
-    padding: 0 5.6vw 5.6vw 5.6vw;
+    position: relative;
+    top: -200px;
+    padding: 5.6vw;
     min-height: 80vh;
     background-image: url("../images/Hero_Murici_desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+
+
 
     //  ÁREA de configuração do conteúdo do hero
     &__content {
