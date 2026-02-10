@@ -329,19 +329,27 @@
   }
 }
 
+.footer {
+  padding: 26px 8px;
+}
 .footer__container {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 20px;
 }
 .footer__logo {
   width: 120px;
   margin: 0 auto 10px;
 }
 .footer__links {
+  display: flex;
   list-style: none;
   margin-bottom: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .footer__links__item {
   display: inline-block;
@@ -356,7 +364,24 @@
   color: #f9f9f9;
 }
 .footer__links__item .language-selector {
-  width: 60px;
+  display: flex;
+  align-items: center;
+}
+.footer__links__item .language-selector img {
+  height: 20px;
+  width: 20px;
+}
+.footer__links__item .language-selector select {
+  background-color: transparent;
+  border: none;
+  color: silver;
+  height: 38px;
+}
+.footer__links__item .language-selector select :hover {
+  color: #f9f9f9;
+}
+.footer__links__item .language-selector select option {
+  background-color: #0F0401;
 }
 
 @font-face {
