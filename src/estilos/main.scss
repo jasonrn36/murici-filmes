@@ -69,7 +69,23 @@ body {
     @include text($FontSize);
     color: variables.$corTextoSecundario; // Esta cor se encontra no documento variables.scss
 }
+.title--big {
+    @include title(44px);
 
+
+}
+
+.title {
+    @include title;
+
+
+}
+.title--small {
+    @include title(28px);
+    font-family: 'Roboto-Regular';
+    font-weight: lighter;
+    color: variables.$corTitulos; // Esta cor se encontra no documento variables.scss
+}
 
 
 .shows {
