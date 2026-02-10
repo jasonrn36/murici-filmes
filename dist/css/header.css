@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   z-index: 3;
-  background-color: transparent;
+  background-color: #260a03;
   transition: background-color 0.5s ease;
   align-items: center;
 }
@@ -18,8 +18,16 @@
     align-items: center;
   }
 }
-.header--is-hidden {
+.header .header--is-solid {
   background-color: #260a03;
+}
+.header--is-hidden {
+  background-color: transparent;
+}
+.header--is-hidden .header__links__item:first-child {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 4;
 }
 .header__container {
   display: flex;

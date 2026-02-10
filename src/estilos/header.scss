@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     z-index: 3;
-    background-color: transparent;
+    background-color: variables.$corDeFundoHeader;
     transition: background-color .5s ease;
     align-items: center;
 
@@ -14,13 +14,17 @@
         top: -5px;
         left: 0;
         z-index: 8;
-        background-color: variables.$corDeFundoHeader;
+        background-color: colors.$corDeFundo;
         transition: background-color .5s ease;
         align-items: center;
     }
 
+    .header--is-solid {
+    background-color: variables.$corDeFundoHeader;
+}
+
     &--is-hidden {
-        background-color: variables.$corDeFundoHeader;
+        background-color: transparent; 
 
        // .header__logo {
         //    opacity: 0;
@@ -29,11 +33,11 @@
 
 
      //   }
-      //  .header__links__item:first-child {
-      //      opacity: 0;
-        //    visibility: hidden;
-        //    z-index: 4;
-   // }
+    .header__links__item:first-child {
+            opacity: 0;
+            visibility: hidden;
+            z-index: 4;
+    }
 }
 
     &__container {
